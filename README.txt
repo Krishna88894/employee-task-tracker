@@ -14,4 +14,5 @@ A frontend web application that allows users to create, manage, and delete emplo
 - JavaScript
 
 ## Live Demo
-https://employee-task-tracker.netlify.app
+https://krishnas-employee-task-tracker.netlify.app/
+
