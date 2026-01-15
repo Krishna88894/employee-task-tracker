@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Task & Issue Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+  <div class="nb">
+    <h2 class="he1">Employee Task & Issue Tracker</h2>
+    <p class="he2">Manage tasks, priorities and status efficiently</p>
+  </div>
+
+  
+
+    <!-- Task Form -->
+    <section class="task-form">
+      <h2>Add New Task</h2>
+
+      <form id="taskForm">
+        <input type="text" placeholder="Task Title" />
+        
+        <textarea placeholder="Task Description"></textarea>
+
+        <select>
+          <option value="">Select Priority</option>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+
+        <select>
+          <option value="">Select Status</option>
+          <option>Open</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+        </select>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+    
+    <!-- Task List -->
+    <section class="task-list">
+      <h2>Task List</h2>
+
+      <div class="tasks">
+        <!-- Task cards will appear here -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
