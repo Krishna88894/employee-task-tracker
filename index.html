@@ -13,46 +13,51 @@
     <p>Manage tasks, priorities, and status efficiently</p>
   </header>
 
-  <main class="container">
+<main class="container">
 
     <!-- Task Form -->
     <section class="task-form">
-      <h2>Add New Task</h2>
+      <h2>Add New Task</h2><hr />
 
       <form id="taskForm">
-        <input type="text" placeholder="Task Title" />
-        
-        <textarea placeholder="Task Description"></textarea>
+    <label for="taskTitle">Task Title</label>
+    <input type="text" id="title" placeholder="Task Title" />
 
-        <select>
-          <option value="">Select Priority</option>
-          <option>Low</option>
-          <option>Medium</option>
-          <option>High</option>
-        </select>
+<textarea id="description" placeholder="Task Description"></textarea>
 
-        <select>
-          <option value="">Select Status</option>
-          <option>Open</option>
-          <option>In Progress</option>
-          <option>Completed</option>
-        </select>
+<select id="priority">
+  <option value="">Select Priority</option>
+  <option>Low</option>
+  <option>Medium</option>
+  <option>High</option>
+</select>
 
-        <button type="submit">Add Task</button>
-      </form>
+<select id="status">
+  <option value="">Select Status</option>
+  <option>Open</option>
+  <option>In Progress</option>
+  <option>Completed</option>
+</select>
+
+
+  <button type="submit" class="btn" 
+  >Add Task</button>
+
+  </form>
+
     </section>
 
     <!-- Task List -->
     <section class="task-list">
-      <h2>Task List</h2>
+      <h2>Task List</h2><hr />
 
       <div class="tasks">
         <!-- Task cards will appear here -->
       </div>
     </section>
 
-  </main>
+</main>
 
-  <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
