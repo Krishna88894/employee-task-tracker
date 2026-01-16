@@ -1,23 +1,28 @@
 // Select elements
 const taskForm = document.getElementById("taskForm");
-const taskTitle = document.getElementById("taskTitle");
-const taskDesc = document.getElementById("taskDesc");
-const taskPriority = document.getElementById("taskPriority");
-const taskStatus = document.getElementById("taskStatus");
+const taskTitle = document.getElementById("title");
+const taskDesc = document.getElementById("description");
+const taskPriority = document.getElementById("priority");
+const taskStatus = document.getElementById("status");
 const taskContainer = document.querySelector(".tasks");
 
 // Load tasks on page load
 document.addEventListener("DOMContentLoaded", loadTasks);
 
 // Add task
-taskForm.addEventListener("submit", function (e) {
+document.getElementById("taskForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
+  const title = document.getElementById("title").value;
+  const description = document.getElementById("description").value;
+  const priority = document.getElementById("priority").value;
+  const status = document.getElementById("status").value;
+
   if (
-    taskTitle.value === "" ||
-    taskDesc.value === "" ||
-    taskPriority.value === "" ||
-    taskStatus.value === ""
+    title === "" ||
+    description === "" ||
+    priority === "" ||
+    status === ""
   ) {
     alert("Please fill all fields");
     return;
@@ -25,10 +30,10 @@ taskForm.addEventListener("submit", function (e) {
 
   const task = {
     id: Date.now(),
-    title: taskTitle.value,
-    description: taskDesc.value,
-    priority: taskPriority.value,
-    status: taskStatus.value,
+    title: title,
+    description: description,
+    priority: priority,
+    status: status,
   };
 
   saveTask(task);
